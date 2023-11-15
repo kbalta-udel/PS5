@@ -141,8 +141,6 @@ namespace OCTOBER.Server.Controllers.UD
                                                 CourseDTO _CourseDTO)
         {
 
-            Debugger.Launch();
-
             try
             {
                 await _context.Database.BeginTransactionAsync();
@@ -172,8 +170,6 @@ namespace OCTOBER.Server.Controllers.UD
         [Route("Delete/{CourseNo}")]
         public async Task<IActionResult> Delete(int CourseNo)
         {
-
-            Debugger.Launch();
 
             try
             {
